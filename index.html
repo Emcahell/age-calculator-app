@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Webzma & Towers challenge | Age calculator app</title>
+</head>
+
+<body>
+
+    <div class="widget">
+      <div class="fechas">  
+        <form id="form" action="#">
+
+          <div class="day">
+            <label id="label-day" for="">DAY</label>
+            <input type="number" name="day" id="day" placeholder="DD">
+            <h6 id="day-mensaje-error"></h6>
+          </div>
+          
+          <div class="month">
+            <label id="label-month" for="">MONTH</label>
+            <input type="number" name="month" id="month" placeholder="MM">
+            <h6 id="month-mensaje-error"></h6>
+          </div>
+          
+          <div class="year">
+            <label id="label-year" for="YEAR">YEAR</label>
+            <input type="number" name="year" value="" id="year" placeholder="YYYY">
+            <h6 id="year-mensaje-error"></h6>
+          </div>
+          
+          <button id="submit" class="btn" onclick="validarCampos()">
+            <img src="./assets/images/icon-arrow.svg" alt="">
+          </button>
+        </form>
+      </div>
+
+
+      <div class="resultado">
+        <div class="calculator-age--container">
+          <p>
+            <span id="year-result" class="year-result">--</span>
+            <span>years</span>
+          </p>
+          <p>
+            <span id="months-result" class="months-result">--</span>
+            <span>months</span>
+          </p>
+          <p>
+            <span id="days-result" class="days-result">--</span>
+            <span>days</span>
+          </p>
+        </div>
+        </div>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
